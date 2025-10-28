@@ -1,10 +1,12 @@
 # Title: Generic_WildApricot_Data_Cleanse
 # Author: cwilliams
 # Date: 2025/10/14
-# Purpose: Clean event contact data before loading into Wild Apricot CMS contacts table
-# Dependencies: argparse, glob, logging, openpyxl, pandas, xlrd, os, re, sys
+# Purpose: Clean event contact data before using the Import functionality into Wild Apricot CMS contacts table
+# Dependencies: argparse, datetime, glob, logging, openpyxl, pandas, xlrd, os, re, sys
+# Usage: python Generic_WildApricot_Data_Import_Cleanse.py "C:\Users\Charl\OneDrive\Documents\Development\Python\DBG\Bulb Sale 2024 ccw.xlsx" --event-column BulbSale2024 --event-value Yes --use-last-cleaned 
 # Date/Name/Change
 # 10/14/2025 cwilliams - Refactored to be generic with parameterized input via Claude
+# 10/28/2025 cwilliams - Modified description slightly and added usage section to document how to call the code, add a -help next?
 
 from datetime import datetime
 import os
